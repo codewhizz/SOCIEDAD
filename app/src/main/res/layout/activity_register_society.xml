@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterSocietyActivity"
+    android:id="@+id/society_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/title_AdminSocietyDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/title_AdminSocietyDetails"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_margin="16dp" />
+
+        <EditText
+            android:id="@+id/society_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/society_reg_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Registration Number"
+            android:inputType="textPersonName"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/society_contact_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/contact_no"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/society_email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/society_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/permanent_add" />
+
+        <EditText
+            android:id="@+id/society_uid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Unique ID"
+            android:inputType="textPersonName"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/no_of_buildings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@mipmap/building"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Number of Buildings"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/no_of_bunglows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@mipmap/bunglow"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Number of Bunglows"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/no_of_rowhouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@mipmap/rowhouse"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Number of Rowhouses"
+            android:inputType="number" />
+
+        <!--           <RelativeLayout-->
+        <!--               android:id="@+id/addTypeView"-->
+        <!--               android:layout_width="match_parent"-->
+        <!--               android:layout_height="wrap_content">-->
+
+        <!--               <ImageView-->
+        <!--                   android:id="@+id/othertype_img"-->
+        <!--                   android:layout_width="wrap_content"-->
+        <!--                   android:layout_height="wrap_content"-->
+        <!--                   android:clickable="true"-->
+        <!--                   android:onClick="addType"-->
+        <!--                   android:src="@mipmap/othertype" />-->
+
+        <!--               <TextView-->
+        <!--                   android:id="@+id/othertype"-->
+        <!--                   android:layout_width="wrap_content"-->
+        <!--                   android:layout_height="wrap_content"-->
+        <!--                   android:layout_centerVertical="true"-->
+        <!--                   android:layout_marginLeft="16dp"-->
+        <!--                   android:layout_toRightOf="@id/othertype_img"-->
+        <!--                   android:text="Other Type"-->
+        <!--                   android:textSize="18sp" />-->
+        <!--           </RelativeLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/society_back_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/back"
+                android:text="@string/back"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/society_next_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:drawableRight="@mipmap/next"
+                android:text="@string/next"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
